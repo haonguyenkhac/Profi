@@ -1,39 +1,83 @@
 *{
-text-decoration: none;
-list-style: none;
-font-size: 12px;
-}
+    text-decoration: none;
+    list-style: none;
+    font-size: 12px;
+    }
+    
+    div, section {
+        display: block;
+    }
+    .dropdown li a{
+        color: white;
+    }
+    
+    .mleft{
+        margin-left:auto!important;
+    }
+    .d-flex{
+        display: flex;
+    }
+    #jarallax-contrainer-0{
+        clip: rect(0 7332px 2060px 0);
+        clip: rect(0, 7332px, 2060px, 0);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    #jarallax-container-1 {
+        clip: rect(0 1349px 398px 0);
+        clip: rect(0, 1349px, 398px, 0);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .hero {
+position: relative;
+    }
+    
+    .hero-background {
+        z-index: 5;
+        visibility: hidden;
+    }
 
-div, section {
-    display: block;
-}
-.dropdown li a{
-    color: white;
-}
+    .hero-fullscreen{
+        min-height: 100vh;
+    }
 
-.mleft{
-    margin-left:auto!important;
-}
-.d-flex{
-    display: flex;
-}
-#jarallax-contrainer-0{
-    clip: rect(0 7332px 2060px 0);
-    clip: rect(0, 7332px, 2060px, 0);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
+    .hero.hero-bg-ready .hero-background {
+        -webkit-animation: hero-bg-reveal 1s;
+        animation: hero-bg-reveal 1s;
+        visibility: visible;
+    }
+    
+    .hero-background, .hero-background-overlay, .hero-foreground {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 10;
+    }
 
-.hero-background {
-    z-index: 5;
-    visibility: hidden;
-}
+    .material-icons {
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 1;
+        letter-spacing: normal;
+        text-transform: none;
+        display: inline-block;
+        white-space: nowrap;
+        word-wrap: normal;
+        direction: ltr;
+        -webkit-font-feature-settings: 'liga';
+        -webkit-font-smoothing: antialiased;
+    }
 
-.hero-background, .hero-background-overlay, .hero-foreground {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 10;
-}
+    .navbar-nav li a{
+        color: black;
+    }
+    .navbar-nav li:hover .nav-link{
+        color: green;
+        border-bottom: 2px solid green;
+    }
+   
