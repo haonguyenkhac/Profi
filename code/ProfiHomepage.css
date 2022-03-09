@@ -2,8 +2,13 @@
     text-decoration: none;
     list-style: none;
     font-size: 12px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     }
-    
+    /* div.container{
+        padding: 0 15px;;
+    } */
     div, section {
         display: block;
     }
@@ -30,14 +35,18 @@
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
     .hero {
-position: relative;
+        position: relative;
     }
     .card.card-bdn{
         border:0;
     }
-    .card.card-bdn .card-body img{
+    .last-card{
+        width: 398px;
+        height: 608.05px;
+    }
+    .card.card-bdn .card-body img, .last-card{
         box-shadow: 0 0 30px 0 rgb(0 0 0 / 10%);
-    transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
     }
     .hero-background {
         z-index: 5;
@@ -75,7 +84,7 @@ position: relative;
         white-space: nowrap;
         word-wrap: normal;
         direction: ltr;
-        -webkit-font-feature-settings: 'liga';
+        /* -webkit-font-feature-settings: 'liga'; */
         -webkit-font-smoothing: antialiased;
     }
 
@@ -86,6 +95,7 @@ position: relative;
         color: green;
         /* border-bottom: 2px solid green; */
         text-decoration: underline;
+        
     }
 
     .py-25{
